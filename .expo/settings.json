@@ -1,0 +1,8 @@
+{
+  "urlRandomness": "ak-b2k",
+  "hostType": "lan",
+  "lanType": "ip",
+  "dev": true,
+  "minify": false,
+  "https": false
+}
