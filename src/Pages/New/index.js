@@ -45,9 +45,7 @@ export default function New({navigation}) {
     await user.once('value').then((s)=> {
       let saldo = parseFloat(s.val().saldo)
       tipo === 'despesa' ? saldo -= parseFloat(valor) : saldo += parseFloat(valor)
-      user.child('saldo').set({
-        saldo: saldo 
-      })      
+      user.child('saldo').set(saldo)      
     })
     setValor('')
     Keyboard.dismiss()
